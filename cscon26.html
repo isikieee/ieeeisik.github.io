@@ -1,3 +1,8 @@
+---
+permalink: /cscon26/
+redirect_from:
+- /cscon26.html
+---
 <!DOCTYPE html>
 <html lang="tr">
 
@@ -47,183 +52,16 @@
 
     <title>CSCON'26 - Yazılım ve Teknoloji Konferansı | Işık Üniversitesi</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/f23a5aadfc.js" crossorigin="anonymous" defer></script>
-    <style type="text/tailwindcss">
-        @theme {
-            --color-orange-50: #fff7ed;
-            --color-orange-100: #ffedd5;
-            --color-orange-200: #fed7aa;
-            --color-orange-300: #fdba74;
-            --color-orange-400: #fb923c;
-            
-            /* Custom Brand Color */
-            --color-orange-500: #FFA300; 
-            
-            --color-orange-600: #ea580c;
-            --color-orange-700: #c2410c;
-            --color-orange-800: #9a3412;
-            --color-orange-900: #7c2d12;
-            
-            --color-orange: #FFA300; 
-        }
-    </style>
 
-    <style>
-        /* Stillerin geri kalanı aynı bırakıldı */
-        :root {
-            --color-cs-blue: #00B5E2;
-            --color-cs-orange: #FFA300;
-            --color-cs-dark-blue: #00629B;
-            --color-cs-gray: #75787B;
-        }
-
-        .text-smart-animate>* {
-            opacity: 0;
-        }
-
-        .text-smart-animate.running>* {
-            animation: 200ms ease-in textSmartAnimate forwards;
-        }
-
-        @keyframes textSmartAnimate {
-            0% {
-                opacity: 0;
-            }
-
-            1% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .appear-up-animate {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-
-        .appear-up-animate.running {
-            animation: 300ms ease-in appearUpAnimate forwards;
-        }
-
-        @keyframes appearUpAnimate {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-
-        .animated-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: -1;
-            opacity: 1;
-        }
-
-        .animated-background span {
-            position: absolute;
-            font-family: monospace;
-            font-size: 32px;
-            color: var(--color-cs-blue);
-            user-select: none;
-            opacity: 0.03;
-            animation-name: flicker;
-            animation-duration: 0.6s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-
-        @keyframes flicker {
-
-            0%,
-            40%,
-            100% {
-                opacity: 0.02;
-            }
-
-            20% {
-                opacity: 0.1;
-            }
-        }
-
-        .appear-down {
-            transform: translateY(-40px);
-            opacity: 0;
-            animation: 200ms appearDown forwards;
-        }
-
-        .disappear-up {
-            transform: translateY(0);
-            opacity: 1;
-            animation: 200ms disappearUp forwards;
-        }
-
-        @keyframes appearDown {
-            0% {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes disappearUp {
-            0% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-
-            100% {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-        }
-
-        [data-visible="false"] {
-            display: none;
-        }
-
-        .day-btn.active {
-            background-color: #2563eb;
-            color: white;
-            border-color: #3b82f6;
-            box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
-        }
-
-        select {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-            background-repeat: no-repeat;
-            background-position: right 1rem center;
-            background-size: 1em;
-        }
-
-        .structured-data {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/cscon-out.css">
 
     <script type="application/ld+json" class="structured-data">
 {
   "@context": "https://schema.org",
   "@type": "Event",
   "name": "CSCON'26 Yazılım ve Teknoloji Konferansı",
+  "url": "https://isikieee.com.tr/cscon26",
   "startDate": "2026-03-06T09:00",
   "endDate": "2026-03-08T18:00",
   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -476,14 +314,16 @@
     <main>
         <section id="hero" class="h-svh flex justify-center items-center max-sm:items-end max-sm:pb-20">
             <div class="flex flex-col justify-center items-center gap-8 max-sm:w-full max-sm:px-6">
-                <h1 class="flex flex-col justift-center items-center gap-2">
+                <h1 class="sr-only">CSCON'26 - Işık Üniversitesi Yazılım ve Teknoloji Konferansı</h1>
+
+                <div class="flex flex-col justify-center items-center gap-2">
                     <span class="font-mono text-orange-500 uppercase font-bold text-center">Işık Üniversitesi Ev
                         Sahipliğinde</span>
                     <img src="./img/cscon/cscon-logo.png" alt="CSCON 2026 Logosu"
                         class="w-130 object-contain max-sm:w-full" />
                     <span class="text-xl appear-up-animate text-center block mt-2">Türkiye'nin En Prestijli Yazılım
                         Konferansı</span>
-                </h1>
+                </div>
 
                 <div class="flex gap-4 max-sm:w-full">
                     <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
